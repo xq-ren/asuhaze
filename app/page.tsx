@@ -1,61 +1,38 @@
 import styles from "./page.module.css";
-import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.page}>
       <div className={styles.layout}>
         <section className={styles.mainContent}>
-          <section className={styles.banner}>
-            PICTURE
-          </section>
-
-          <section className={styles.intro}>
-            TEXT TEXT TEXT
-          </section>
-
-          <section className={styles.bottomSection}>
-            <div className={styles.character}>
-              PICTURE
+            <div className={styles.buttonContainer}>
+                <button className={styles.button} disabled>Button</button>
+                <button className={styles.button} disabled>Button</button>
+                <button className={styles.button} disabled>Button</button>
             </div>
 
-            <div className={styles.text}>
-              TEXT TEXT TEXT TEXT
+            <div className={styles.contentContainer}>
+                <div className={styles.profileContainer}>
+                    <div className={styles.profilePicture}>
+                        {/* Add image here later */}
+
+                    </div>
+                    <div className={styles.socialLinks}>
+                        {/* Add href here later */}
+                            <span>Link</span>
+                            <span>Link</span>
+                            <span>Link</span>
+                    </div>
+                </div>
+                <div className={styles.cardsContainer}>
+                    <div className={styles.card}></div>
+                    <div className={`${styles.card} ${styles.card2}`}></div>
+                </div>
             </div>
-          </section>
         </section>
-
-        <aside className={styles.sidebar}>
-          <p className={styles.menuTitle}>SIDE MENU</p>
-
-          <nav className={styles.nav}>
-            <div className={styles.projectMenu}>
-              <Link href="/projects">
-                PROJECTS
-              </Link>
-
-              <div className={styles.projectDropdown}>
-                <Link href="/projects/yoko">YOKO</Link>
-                <Link href="/projects/rendar">RENDAR</Link>
-              </div>
-            </div>
-
-            <Link href="/about">ABOUT</Link>
-            <Link href="/contact">CONTACT</Link>
-          </nav>
-        </aside>
       </div>
-
       <footer className={styles.footer}>
-        <a
-          href="https://github.com/xq-ren"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GITHUB
-        </a>
-
-        <a href="#">SOCIALS</a>
+          <p>2026 asuhaze. Third-party assets belong to their respective owners.</p>
       </footer>
     </main>
   );
