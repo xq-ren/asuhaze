@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,9 +7,9 @@ export default function Home() {
         <section className={styles.mainContent}>
 
         <div className={styles.buttonContainer}>
-        <button className={styles.button}>Button</button>
-        <button className={styles.button}>Button</button>
-        <button className={styles.button}>Button</button>
+        <button className={styles.button} disabled>Button</button>
+        <button className={styles.button} disabled>Button</button>
+        <button className={styles.button} disabled>Button</button>
         </div>
 
         <div className={styles.contentContainer}>
@@ -20,20 +19,10 @@ export default function Home() {
                         </div>
 
                         <div className={styles.socialLinks}>
-                            <a href="https://" target="_blank" rel="noopener noreferrer">
-
+                            {/* Add href here later */}
                               <span>Link</span>
-                            </a>
-
-                            <a href="https://" target="_blank" rel="noopener noreferrer">
-
                               <span>Link</span>
-                            </a>
-
-                            <a href="https://" target="_blank" rel="noopener noreferrer">
-
                               <span>Link</span>
-                            </a>
                         </div>
             </div>
 
