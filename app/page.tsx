@@ -8,25 +8,46 @@ export default function Home() {
         <section className={styles.mainContent}>
 
         <div className={styles.buttonContainer}>
-        <button className={styles.button}>T/B/L</button>
-        <button className={styles.button}>T/B/L</button>
-        <button className={styles.button}>T/B/L</button>
+        <button className={styles.button}>Button</button>
+        <button className={styles.button}>Button</button>
+        <button className={styles.button}>Button</button>
         </div>
 
-        <div className={styles.profileContainer}>
-        {/* pic and links */}
-        </div>
+        <div className={styles.contentContainer}>
+            <div className={styles.profileContainer}>
+                        <div className={styles.profilePicture}>
 
-        <div className={styles.cardsContainer}>
-        <div className={styles.card}>Card 1</div>
-        <div className={`${styles.card} ${styles.card2}`}>Card 2</div>
+                        </div>
+
+                        <div className={styles.socialLinks}>
+                            <a href="https://" target="_blank" rel="noopener noreferrer">
+
+                              <span>Link</span>
+                            </a>
+
+                            <a href="https://" target="_blank" rel="noopener noreferrer">
+
+                              <span>Link</span>
+                            </a>
+
+                            <a href="https://" target="_blank" rel="noopener noreferrer">
+
+                              <span>Link</span>
+                            </a>
+                        </div>
+            </div>
+
+            <div className={styles.cardsContainer}>
+                <div className={styles.card}></div>
+                <div className={`${styles.card} ${styles.card2}`}></div>
+            </div>
         </div>
 
         </section>
       </div>
 
       <footer className={styles.footer}>
-
+          <p>2026 asuhaze. Third-party assets belong to their respective owners.</p>
       </footer>
     </main>
   );

@@ -45,6 +45,51 @@
     border-radius: 57px;
 }
 
+.contentContainer {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.profilePicture {
+  width: 162.2px;
+  height: 162.2px;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  width: 100%;
+}
+
+.socialLinks a {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.socialLinks img {
+  width: 46.8px;
+  height: 46.8px;
+  object-fit: contain;
+}
+
+.socialLinks a:hover {
+  color: #ff7777;
+}
+
 .cardsContainer {
   display: flex;
   justify-content: center;
@@ -65,7 +110,7 @@
     0 9px 0 #4a0808,
     0 18px 0 rgba(90, 10, 10, 0.45);
 
-  transform: translate(80px, -30px);
+  transform: translate(-60px, 20px);
 }
 
 .card2 {
@@ -74,11 +119,17 @@
 }
 
 .footer {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
 
+  color: #ffffff;
+  font-size: 12px;
+  text-align: right;
 }
 
-.footer a {
-
+.footer p {
+  margin: 0;
 }
 
 /* MOBILE */
