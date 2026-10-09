@@ -1,7 +1,6 @@
 .page {
   min-height: 100vh;
   background-color: black;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +10,6 @@
   width: 100%;
   max-width: 840.2px;
   min-height: 500.5px;
-
   background-color: #ff3131;
   border: 10px solid #ad1b45;
   box-shadow: 14px 15px #ad1b45;
@@ -19,10 +17,10 @@
 }
 
 .mainContent {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
 }
 
 .buttonContainer {
@@ -32,12 +30,11 @@
 }
 
 .button {
-    width: 100%;
-    max-width: 177.4px;
-    min-height: 50px;
-
-    background-color: #000000;
-    border-radius: 57px;
+  width: 100%;
+  max-width: 177.4px;
+  min-height: 50px;
+  background-color: #000000;
+  border-radius: 57px;
 }
 
 .contentContainer {
@@ -70,7 +67,6 @@
   display: flex;
   align-items: center;
   gap: 11px;
-
   color: #ffffff;
   text-decoration: none;
 }
@@ -87,23 +83,19 @@
 
 .cardsContainer {
   display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 35px;
-
+  justify-content: center;
+  align-items: flex-start;
+  gap: 35px;
   margin-left: -60px;
   margin-top: 20px;
-
 }
 
 .card {
   width: 100%;
   max-width: 206.2px;
   min-height: 305px;
-
   background-color: #c61f1f;
   border-radius: 57px;
-
   box-shadow:
     0 9px 0 #4a0808,
     0 18px 0 rgba(90, 10, 10, 0.45);
@@ -118,7 +110,6 @@
   position: fixed;
   bottom: 20px;
   right: 30px;
-
   color: #ffffff;
   font-size: 12px;
   text-align: right;
