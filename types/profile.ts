@@ -17,11 +17,13 @@ export interface Button {
 }
 
 export interface ProfileTheme {
-  backgroundColor: string;
   containerColor: string;
   borderColor: string;
+  layoutShadowColor: string;
+  buttonColor: string;
   cardColor: string;
-  textColor: string;
+  cardShadowColor: string;
+  textOutlineColor: string;
 }
 
 export interface ProfileMetadata {

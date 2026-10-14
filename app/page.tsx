@@ -1,8 +1,21 @@
 import styles from "./page.module.css";
 import { defaultProfile } from "../data/defaultProfile";
 import Image from "next/image";
+import type { CSSProperties } from "react";
 
 export default function Home() {
+  const theme = defaultProfile.theme;
+
+  const themeStyle = {
+    "--container-color": theme.containerColor,
+    "--border-color": theme.borderColor,
+    "--layout-shadow-color": theme.layoutShadowColor,
+    "--button-color": theme.buttonColor,
+    "--card-color": theme.cardColor,
+    "--card-shadow-color": theme.cardShadowColor,
+    "--text-outline-color": theme.textOutlineColor,
+  } as CSSProperties;
+
   return (
     <main className={styles.page}>
       <div className={styles.layout}>

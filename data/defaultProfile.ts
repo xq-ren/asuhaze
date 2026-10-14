@@ -28,10 +28,12 @@ export const defaultProfile: ProfileContent = {
   ],
 
   theme: {
-    backgroundColor: "#000000",
     containerColor: "#ff3131",
     borderColor: "#ad1b45",
+    layoutShadowColor: "#ad1b45",
+    buttonColor: "#000000",
     cardColor: "#c61f1f",
-    textColor: "#ffffff",
+    cardShadowColor: "#4a0808",
+    textOutlineColor: "#000000",
   },
 };

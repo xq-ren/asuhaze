@@ -10,9 +10,9 @@
   width: 100%;
   max-width: 840.2px;
   min-height: 500.5px;
-  background-color: #ff3131;
-  border: 10px solid #ad1b45;
-  box-shadow: 14px 15px #ad1b45;
+  background-color: var(--container-color);
+  border: 10px solid var(--border-color);
+  box-shadow: 14px 15px var(--layout-shadow-color);
   border-radius: 57px;
 }
 
@@ -33,7 +33,7 @@
   width: 100%;
   max-width: 177.4px;
   min-height: 50px;
-  background-color: #000000;
+  background-color: var(--button-color);
   border-radius: 57px;
 }
 
@@ -71,22 +71,23 @@
   width: 100%;
 }
 
-.socialLinks a {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
 .socialLinks img {
   width: 46.8px;
   height: 46.8px;
   object-fit: contain;
 }
 
-.socialLinks a:hover {
-  color: #ff7777;
+.socialLinks span {
+  display: inline-block;
+
+  transition:
+    transform 0.2s ease,
+    text-shadow 0.2s ease;
+}
+
+.socialLinks span:hover {
+  transform: translateY(-3px);
+  text-shadow: 2px 3px 0 var(--text-outline-color);
 }
 
 .cardsContainer {
@@ -102,13 +103,15 @@
   width: 100%;
   max-width: 206.2px;
   min-height: 305px;
-  background-color: #c61f1f;
+  background-color: var(--card-color);
   border-radius: 57px;
   box-shadow:
-    0 9px 0 #4a0808,
+    0 9px 0 var(--card-shadow-color),
     0 18px 0 rgba(90, 10, 10, 0.45);
   padding: 24px;
   box-sizing: border-box;
+  color: #ffffff;
+  -webkit-text-stroke: 0.5px var(--text-outline-color);
 }
 
 .card2 {
