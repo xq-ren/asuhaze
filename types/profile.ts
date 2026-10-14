@@ -4,16 +4,9 @@ export interface SocialLink {
     url: string;
 }
 
-export interface ContentCard{
-    id: string;
-    title: string;
-    description: string;
-}
-
 export interface ContentCard {
-  id: string;
-  title: string;
-  description: string;
+    id: string;
+    content: string;
 }
 
 export interface Button {
@@ -38,8 +31,6 @@ export interface ProfileMetadata {
 
 export interface ProfileContent {
   profile: {
-    displayName: string;
-    bio: string;
     imageUrl: string | null;
     metadata: ProfileMetadata;
   };

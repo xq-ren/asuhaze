@@ -2,9 +2,12 @@ import type { ProfileContent } from "../types/profile";
 
 export const defaultProfile: ProfileContent = {
   profile: {
-    displayName: "asuhaze",
-    bio: "",
     imageUrl: null,
+
+    metadata: {
+        title: "Asuhaze",
+        description: "Personal portfolio website",
+    },
   },
 
   socialLinks: [
@@ -14,13 +17,8 @@ export const defaultProfile: ProfileContent = {
   ],
 
   cards: [
-      { id: "card-1", title: "Title 1",
-          description: "Description 1",
-      },
-
-      { id: "card-2", title: "Title 2",
-          description: "Description 2",
-      },
+    { id: "card-1", content: "Text 1" },
+    { id: "card-2", content: "Text 2" },
   ],
 
   navigation: [
@@ -28,11 +26,6 @@ export const defaultProfile: ProfileContent = {
     { id: "nav-2", label: "Button 2", enabled: false, url: null },
     { id: "nav-3", label: "Button 3", enabled: false, url: null },
   ],
-
-  metadata: {
-    title: "Asuhaze",
-    description: "Personal portfolio and projects by Asuhaze.",
-  },
 
   theme: {
     backgroundColor: "#000000",
