@@ -17,7 +17,7 @@ export default function Home() {
   } as CSSProperties;
 
   return (
-    <main className={styles.page}>
+    <main className={styles.page} style={themeStyle}>
       <div className={styles.layout}>
         <section className={styles.mainContent}>
             <div className={styles.buttonContainer}>
