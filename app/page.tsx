@@ -1,4 +1,6 @@
 import styles from "./page.module.css";
+import { defaultProfile } from "../data/defaultProfile";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -6,27 +8,32 @@ export default function Home() {
       <div className={styles.layout}>
         <section className={styles.mainContent}>
             <div className={styles.buttonContainer}>
-                <button className={styles.button} disabled>Button</button>
-                <button className={styles.button} disabled>Button</button>
-                <button className={styles.button} disabled>Button</button>
+              {defaultProfile.navigation.map((button) => (
+                <button key={button.id} className={styles.button} disabled>
+                    {button.label}
+                </button> ))}
             </div>
 
             <div className={styles.contentContainer}>
                 <div className={styles.profileContainer}>
                     <div className={styles.profilePicture}>
-                        {/* Add image here later */}
-
+                      {defaultProfile.profile.imageUrl && (
+                        <Image src={defaultProfile.profile.imageUrl} alt="Image" width={200} height={200}/>
+                      )}
                     </div>
+
                     <div className={styles.socialLinks}>
-                        {/* Add href here later */}
-                            <span>Link</span>
-                            <span>Link</span>
-                            <span>Link</span>
+                      {defaultProfile.socialLinks.map((link) => (
+                          <span key={link.id}>{link.label}</span> )
+                      )}
                     </div>
                 </div>
+
                 <div className={styles.cardsContainer}>
-                    <div className={styles.card}></div>
-                    <div className={`${styles.card} ${styles.card2}`}></div>
+                  {defaultProfile.cards.map((card, index) => (
+                    <div key={card.id} className={ index === 1 ? `${styles.card} ${styles.card2}` : styles.card }>
+                      <p>{card.content}</p>
+                    </div>))}
                 </div>
             </div>
         </section>
